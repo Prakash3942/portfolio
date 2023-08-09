@@ -121,6 +121,34 @@ li {
   grid-template-columns: repeat(4, 1fr);
 }
 
+.common-heading {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 4rem;
+  text-transform: capitalize;
+  position: relative;
+}
+.common-heading::before {
+  content: "";
+  position: absolute;
+  top: 110%;
+  left: 0;
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--helper);
+  border-radius: 50%;
+}
+
+.common-heading::after {
+  content: "";
+  position: absolute;
+  top: 119%;
+  left: 1rem;
+  min-width: 12rem;
+  height: 0.2rem;
+  background-color: var(--helper);
+}
+
 /* ===========================================
 Header Section Start
 ======================================= */
@@ -196,4 +224,17 @@ Hero  Section Start
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* ===========================================
+Bio Data Section Start
+======================================= */
+.bio-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bio-image img {
+  width: 80%;
+  box-shadow: -2rem -2rem 0 0 var(--helper);
 }
